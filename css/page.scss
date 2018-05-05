@@ -1,0 +1,49 @@
+$primary: #343a40;
+$secondary: white;
+
+a {
+  &:hover {
+    color: rgba($secondary, 0.9) !important;
+    text-decoration: none;
+  }
+
+  text-transform: uppercase;
+  color: $secondary !important;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: $primary;
+  color: $secondary
+}
+
+p {
+  text-align: justify;
+}
+
+.distance {
+  margin-bottom: 1em;
+}
+
+.source {
+  color: #007bff !important;
+  text-decoration: underline #007bff !important;
+  text-transform: none !important;
+
+  &:hover {
+    color: #007bff !important;
+    text-decoration: underline #007bff !important;
+  }
+}
+
+.expand-height {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}

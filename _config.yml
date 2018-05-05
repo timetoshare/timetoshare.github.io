@@ -1,0 +1,56 @@
+title: time2share | teilen statt kaufen
+mainpage_heading: teilen statt kaufen.
+email: info@time2share.de
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+google_analytics: UA-109244619-1
+google_maps_api_key: AIzaSyB_2CfPLsb-CMF8vbHQZ9B1PhbznahAe1E
+we_heading: Eine App - viele Produkte
+we_text: Nutze mit nur einer App eine Vielzahl unterschiedlichster Produkte und starte ganz unbeschwert in den Tag!
+         Als Startup made in Düsseldorf haben wir uns das Ziel gesetzt, Deutschland zum sharen zu motivieren.
+         Getreu nach unserem Motto „teilen statt kaufen“ möchten wir den Nutzern von time2share eine Produktvielfalt bieten, die stets durch neue Artikel erweitert wird.
+         Wir sind der Meinung, dass längst nicht alle Produkte die gebraucht und verwendet werden auch zwangsläufig gekauft werden müssen.
+         It’s time to share!
+
+partners_heading: Partnershop werden
+partners_text: Sie möchten Ihren Kunden stets einen innovativen und komfortablen Service bieten?
+               Dann wäre es eine super Idee, time2share zu integrieren!
+               Ganz egal, ob ein Kunde nach einem Einkauf in Ihrem Geschäft ungerne mit den neu erworbenen Artikeln durch den Regen nach Hause gehen möchte oder ob ein potenzieller Neukunde durch die time2share App zu Ihrem Laden navigiert wird. Sie hinterlassen in jedem Fall einen positiven Eindruck, durch einen praktischen und bequemen Service!
+               Ein schwacher Handy-Akku kann die Nerven einiger Kunden sehr strapazieren und sogar den Shopping-Trip oder Restaurantbesuch verfrüht zum Abbruch bringen. Auch in diesem Fall wäre es doch ideal, Ihrem Kunden eine Lösung anzubieten.
+               Der Bezug zu unseren Partnershops liegt uns sehr am Herzen, daher überlassen wir jedem Partnershop die Freiheit, eigenständig zu entscheiden, welche Artikel er zum Verleih anbieten möchte.
+               Falls Sie Interesse haben, im Netzwerk von time2share mitzuwirken, schreiben sie uns gerne eine Mail. Bei Fragen stehen wir Ihnen sehr gerne zur Verfügung.
+
+
+sponsoring_heading: Werbepartner werden
+sponsoring_text: Als Werbepartner können sie die geographische und personelle Dynamik unserer Produkte nutzen, um kostengünstig für Ihr Unternehmen zu werben. Wir bemühen uns sehr, bei unseren Kunden positive Gefühle und Erinnerungen herbeizuführen. Kunden von time2share sollen unbeschwert in den Tag starten und sich keine Gedanken über alltägliche Produkte wie Regenschirme, Power-Banks und Tragetaschen machen müssen.
+                 Wenn Ihr Unternehmen in eine direkte Verbindung mit unserem bequemen Service gebracht werden soll, melden Sie sich gerne per Mail über unser Kontaktformular. Selbstverständlich stehen wir Ihnen bei Fragen sehr gerne zur Verfügung.
+
+
+contact_heading: Kontakt
+
+umbrella_text: Keinen Regenschirm? Kein Problem! Es regnet und du hast mal wieder deinen Schirm vergessen?
+              Früher hieß es dann schnell irgendwo unterstellen oder durch den Regen sprinten.
+              Mit der time2share App kannst du ganz bequem nachschauen, wo sich ein time2share Partnershop in deiner Nähe befindet.
+              Dort leihst du dir einfach einen Schirm.
+              Es hat aufgehört zu regnen? Super, bring den Schirm in einen beliebigen Partnershop zurück und genieße das Wetter ohne den lästigen nassen Regenschirm!
+
+battery_text: Das Smartphone ist unser alltäglicher Begleiter. Wenn der Handy-Akku sich langsam von dir verabschiedet, kann es mit der Laune schon mal bergab gehen.
+              Unsere App verhindert, dass du panisch nach Hause hetzen musst um dein Handy in letzter Sekunde zu retten.
+              Schau einfach in der time2share App, wo du dir eine Power-Bank ausleihen kannst.
+              Sobald dein Akku wieder geladen ist und die Power-Bank unbequem wird, kannst du sie einfach wieder im nächstgelegenen Partnershop abgeben.
+
+bag_text: Auch Tragetaschen kannst du dir mit time2share ganz bequem ausleihen.
+          Einem spontanen Einkauf steht somit nichts mehr im Wege!
+          In Zukunft werden weitere nützliche Produkte, die dir deinen Alltag erleichtern, folgen.

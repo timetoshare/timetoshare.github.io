@@ -1,0 +1,157 @@
+$primary: #343a40;
+$secondary: white;
+$cover-opacity: 0.3;
+
+header {
+  color: white;
+  background-color: rgba(0, 0, 0, $cover-opacity);
+  padding-top: 18em;
+  padding-bottom: 12em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    padding: 1em 1em 2em;
+    line-height: 1.5;
+    font-size: 1em;
+  }
+
+  @media (min-width: 768px) {
+    line-height: 1.8;
+    padding: 1em 5em 2em;
+  }
+}
+
+a {
+  &:hover {
+    color: rgba($secondary, 0.9) !important;
+    text-decoration: none;
+  }
+
+  text-transform: uppercase;
+  color: $secondary !important;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input, textarea{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+form {
+  @media (max-width: 768px) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+#we {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+#title {
+  margin-top: -0.5em;
+
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
+}
+
+#battery-container {
+  @media (max-width: 576px) {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+#items {
+  div {
+    div {
+      div {
+        p {
+          padding: 1em 2em 1em !important;
+        }
+      }
+    }
+  }
+}
+
+.navbar-custom {
+  padding: 1em;
+}
+
+.logo {
+  width: 32em;
+
+  @media (max-width: 768px) {
+    width: 22em;
+  }
+}
+
+.expand-height {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.expand-height-mobile {
+  @media (max-width: 768px) {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@mixin paint($bg, $text, $alpha) {
+  background-color: rgba($bg, $alpha);
+  color: $text;
+}
+
+.primary {
+  @include paint($primary, $secondary, 1)
+}
+
+.secondary {
+  @include paint($secondary, $primary, 1)
+}
+
+.transparent {
+  @include paint(black, $secondary, $cover-opacity)
+}
+
+.show-nav-bg {
+  transition: all .5s ease-in !important;
+  background-color: rgba(black, 0.7);
+  color: white;
+}
+
+.hide-nav-bg {
+  transition: all .5s ease-out !important;
+}
+
+.line {
+  padding: 0.25em;
+}
+
+.body-background {
+  background-size: cover;
+  background: url('/img/mobile.jpg') no-repeat fixed;
+}
+
+.distance {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css" integrity="sha256-F7ltaOOG43jRgyDtoHy9xepl2CDV4INv8ZVXESAXnP4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    {% include google-analytics.html %}
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top navbar-custom">
+        <a class="navbar-brand" href="#">time2share</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#we">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#locations">Partner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="main">
+        <img src="/img/logo.png" alt="time2share" class="img-fluid logo"/>
+        <h3 id="title"><small>{{ site.mainpage_heading }}</small></h3>
+    </header>
+
+    <section id="app" class="primary expand-height">
+        <div class="container-fluid">
+            <div class="row text-center text-white">
+                <div class="col-sm">
+                    <i id="android" class="fab fa-android fa-4x"></i>
+                </div>
+                <div class="col-sm expand-height-mobile">
+                    <h2>App coming soon</h2>
+                </div>
+                <div class="col-sm">
+                    <i id="apple" class="fab fa-app-store-ios fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="we" class="secondary">
+        <div class="container text-center">
+            <h3>{{ site.we_heading }}</h3>
+            <p>{{ site.we_text }}</p>
+        </div>
+    </section>
+
+    <section id="items" class="transparent expand-height">
+        <div class="container-fluid">
+            <div class="row text-center text-white">
+                <div class="col-12 col-lg">
+                    <i id="umbrella" class="fas fa-umbrella fa-4x" style="padding-bottom: 0.25em"></i>
+                    <h3>Regenschirme</h3>
+                    <p>{{ site.umbrella_text }}</p>
+                </div>
+
+                <div id="battery-container" class="col-12 col-lg">
+                    <i id="battery" class="fas fa-battery-empty fa-4x" style="padding-bottom: 0.25em"></i>
+                    <h3>Powerbanks</h3>
+                    <p>{{ site.battery_text }}</p>
+                </div>
+
+                <div class="col-12 col-lg">
+                    <i id="bag" class="fas fa-shopping-bag fa-4x" style="padding-bottom: 0.25em"></i>
+                    <h3>Taschen</h3>
+                    <p>{{ site.bag_text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="secondary expand-height">
+        <div class="container text-center">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266920625?color=007bff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </section>
+
+    <section id="locations">
+        <div id="map"></div>
+    </section>
+
+    <section id="partner" class="secondary expand-height">
+        <div class="container text-center">
+            <h3>{{ site.partners_heading }}</h3>
+            <p>{{ site.partners_text }}</p>
+        </div>
+    </section>
+
+    <section id="sponsor" class="primary expand-height">
+        <div class="container text-center">
+            <h3>{{ site.sponsoring_heading }}</h3>
+            <p>{{ site.sponsoring_text }}</p>
+        </div>
+    </section>
+
+    <section id="contacts" class="secondary expand-height">
+        <div class="container text-center">
+            <h2>{{ site.contact_heading }}</h2>
+            <form action="https://formspree.io/info@time2share.de" method="POST">
+                <input class="form-control" type="text" name="name" placeholder="Name" required="">
+                <input class="form-control" type="email" name="email" placeholder="Email" required="">
+                <input class="form-control" type="text" name="subject" placeholder="Betreff" required="">
+                <textarea class="form-control" name="message" placeholder="Nachricht" required="" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary btn-lg">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js" integrity="sha256-9CnWj9uvpwFP4Em8rkT97B5M3WHJ3niLecGwu1eZkYg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_api_key }}&callback=initMap">
+    </script>
+</body>
+</html>
